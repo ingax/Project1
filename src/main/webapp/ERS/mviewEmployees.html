@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<title>Employees</title>
+</head>
+<body>
+	<nav class = "navbar navbar-default">
+		<div class = "container-fluid">
+			<div class = "navbar-header">
+				<a class = "navbar-brand" href="#">Manager Reimbursment Requests</a>				
+			</div>
+			<ul class = "nav navbar-nav navbar-right">
+				<li>
+					<a href="managers.html"> Home </a>					
+				</li>
+				<li> 
+					<a href="mrequest.html"> Forms </a>
+				</li>
+				<li class="active">
+					<a href="viewEmployees.html"> Employees </a>
+				</li>
+				<li>
+					<a href="../homepage.html"><span class = "glyphicon glyphicon-log-out"> Logout</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<table style="margin: auto; text-align: center">
+		<thead>
+			<tr>
+				<th> Employees ID </th>
+				<th> First Name </th>
+				<th> Last Name </th>
+				<th> Address </th>
+				<th> Phone Number </th>
+				<th> Email </th>
+			</tr>
+		</thead>
+		<tbody id = "EmployeeTable"></tbody>
+	</table>
+
+<script src = "../managersIndex.js"></script>
+</body>
+</html>

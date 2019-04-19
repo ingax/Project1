@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<title>New Form</title>
+</head>
+<body>
+
+<div class = "container-fluid">
+	<nav class = "navbar navbar-inverse">
+		<div class = "container-fluid">
+			<div class = "navbar-header">
+				<a class = "navbar-brand" href="#">Employee Reimbursment </a>
+			</div>
+			<ul class = "nav navbar-nav navbar-right">
+				<li>
+					<a href="employee.html"> Home </a>
+				</li>
+				<li> 
+					<a href ="empInfo.html" > Employee Information </a>
+				</li>
+				<li class="active">
+					<a href="newForm.html"> New Form </a>
+				</li>
+				<li>
+					<a href="../homepage.html"><span class = "glyphicon glyphicon-log-out"> Logout</span></a>
+				</li>				
+			</ul>
+		</div>
+	</nav>
+</div>
+
+<h2> Create a New Form </h2>
+	<form action = "../FormRequestServlet" method = "POST">
+		<input name = "FormNum" type = "text" placeholder="formId"><br>
+		<input name = "amt" type = "text" placeholder="amount"><br>
+		<input name = "rsn" type = "text" placeholder="reason"><br>
+		<input name = "emplid" type = "text" placeholder="Employee id"><br>
+		<input type = "submit" value="Sumbit">
+	</form>
+
+<script src = "../formsIndex.js"></script>
+</body>
+</html>

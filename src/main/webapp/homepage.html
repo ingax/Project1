@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<title>Home Page</title>
+</head>
+<style>
+		body{
+			text-align: center;
+			background-color: lightgrey;
+		}
+		h1{
+			font-weight: bold;
+		}
+	</style>
+<body>
+	<h1>Reimburstment</h1>
+		<form action="EmployeeLoginServlet" method="POST">
+			<fieldset>
+				<legend>Employee Login</legend>
+				<label>Employee Id </label><input type="text" name="emplid" /> <br/> <br/>
+				<label>Password </label><input type="password" name="emplpassword" /> <br/> <br/>
+				<input type="submit" id="empLogin">
+			</fieldset>
+		</form>
+		<form action="ManagerLoginServlet" method="POST">
+			<fieldset>
+				<legend>Manager Login</legend>
+				<label> Manager Id </label> <input type="text" name="mngrid" /> <br/> <br/>
+				<label> Password </label> <input type="password" name="mngrpassword" /> <br/> <br/>
+				<input type = "submit" id ="mngrLogin">
+			</fieldset>
+		</form>
+</body>
+</html>

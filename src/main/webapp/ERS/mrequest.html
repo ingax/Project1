@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<title>Pending Request</title>
+</head>
+<body>
+	<nav class = "navbar navbar-default">
+		<div class = "container-fluid">
+			<div class = "navbar-header">
+				<a class = "navbar-brand" href="#">Manager Reimbursment Requests</a>				
+			</div>
+			<ul class = "nav navbar-nav navbar-right">
+				<li >
+					<a href="managers.html"> Home </a>					
+				</li>
+				<li class="active"> 
+					<a href="mrequest.html"> Forms </a>
+				</li>
+				<li >
+					<a href="mviewEmployees.html"> Employees </a>
+				</li>
+				<li>
+					<a href="../homepage.html"><span class = "glyphicon glyphicon-log-out"> Logout</span></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	
+	<table style="margin: auto"> 
+		<thead>
+			<tr>
+				<th> Form ID </th>
+				<th> Amount </th>
+				<th> Reason </th>
+				<th> Employee ID </th>
+				<th> Decision </th>
+			</tr>
+		</thead>
+		<tbody id = "pendingTable"></tbody>
+	</table>
+</body>
+<script src = "../formsIndex.js"></script>
+</html>
